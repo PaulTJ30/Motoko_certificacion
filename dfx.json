@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "citas_backend": {
+      "main": "src/citas_backend/main.mo",
+      "type": "motoko"
+    },
+    "citas_frontend": {
+      "dependencies": [
+        "citas_backend"
+      ],
+      "source": [
+        "src/citas_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "citas_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
