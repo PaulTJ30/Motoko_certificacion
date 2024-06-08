@@ -55,7 +55,7 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                {Citas.lengt > 0 ? (
+                {Citas.length  > 0 ? (
                   Citas.map((cita) => (
                     <tr>
                       <td>{Number(cita.n)}</td>
